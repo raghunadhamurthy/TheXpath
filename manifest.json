@@ -1,0 +1,31 @@
+{
+  "name": "CVS_Xp",
+  "description": "Xpath finder",
+  "version": "1.0",
+  "manifest_version": 2,
+    "icons": {
+    "128": "Assets/cvs_xp3.png"
+  },
+    "permissions": [
+      "<all_urls>",
+      "contextMenus",
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches":[
+          "<all_urls>"
+        ],
+         "js":[
+           "app/src/content.js"
+         ]
+      }
+    ],
+    "background": {
+      
+      "persistent": false,
+      "scripts": [
+        "eventPage.js"
+      ]
+    }
+}
